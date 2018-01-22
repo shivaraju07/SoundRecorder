@@ -68,7 +68,7 @@ public class MainActivity extends ActionBarActivity{
     }
 
     public class MyAdapter extends FragmentPagerAdapter {
-        private String[] titles = { getString(R.string.tab_title_record),
+        private String[] headings = { getString(R.string.tab_title_record),
                 getString(R.string.tab_title_saved_recordings) };
 
         public MyAdapter(FragmentManager fm) {
@@ -90,12 +90,12 @@ public class MainActivity extends ActionBarActivity{
 
         @Override
         public int getCount() {
-            return titles.length;
+            return headings.length;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return titles[position];
+            return headings[position];
         }
     }
 
